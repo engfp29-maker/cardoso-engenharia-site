@@ -163,3 +163,38 @@
   transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
 }
 .project:hover .project__hover { opacity: 1; transform: none; }
+
+.projects__more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2.5rem;
+  margin-top: clamp(2rem, 3.5vw, 3rem);
+  padding-top: clamp(1.5rem, 2.5vw, 2rem);
+  border-top: 1px solid var(--ink-100);
+}
+.projects__more p {
+  max-width: 46ch;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--ink-500);
+}
+
+@media (hover: none) {
+  .project__hover { opacity: 1; transform: none; }
+}
+
+@media (max-width: 900px) {
+  .project { grid-column: span 6; min-height: 300px; }
+  .project--wide { grid-column: span 12; }
+  .project--tall { min-height: 380px; }
+}
+
+@media (max-width: 620px) {
+  .projects__head { flex-direction: column; align-items: flex-start; }
+  .project { grid-column: span 12; min-height: 260px; }
+  .project--tall { min-height: 320px; }
+  .projects__more { flex-direction: column; align-items: flex-start; }
+  .projects__more .btn { width: 100%; justify-content: center; }
+}
