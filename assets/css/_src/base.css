@@ -234,7 +234,6 @@ p { text-wrap: pretty; }
   border-radius: 50%;
   background: var(--color-graphite-strong);
 }
-
 .section-head {
   display: grid;
   gap: var(--space-4);

@@ -7,4 +7,22 @@
 04.jpg
 05.jpg
 06.jpg
+07.jpg
 _*.png
+
+# referências visuais / moodboard (não fazem parte do site)
+*.jpg
+*.jpeg
+*.png
+*.webp
+!assets/img/*.jpg
+!assets/img/*.jpeg
+!assets/img/*.png
+!assets/img/*.webp
+
+# ambiente e ferramentas
+.vercel/
+.vscode/
+.DS_Store
+Thumbs.db
+node_modules/

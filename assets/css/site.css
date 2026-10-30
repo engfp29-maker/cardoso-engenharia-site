@@ -242,7 +242,6 @@ p { text-wrap: pretty; }
   border-radius: 50%;
   background: var(--color-graphite-strong);
 }
-
 .section-head {
   display: grid;
   gap: var(--space-4);
@@ -507,6 +506,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
 
 
 
@@ -779,6 +779,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   white-space: nowrap;
 }
 
+
 /* ===== about.css ===== */
 /* about.css â€” apresentaÃ§Ã£o do engenheiro, indicadores e especializaÃ§Ãµes */
 
@@ -986,6 +987,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   line-height: 1.5;
 }
 
+
 /* ===== services.css ===== */
 /* services.css â€” serviÃ§os (cards Carbon) e diferenciais (lista com hairlines) */
 
@@ -1129,6 +1131,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   color: var(--color-ash);
   max-width: 40rem;
 }
+
 
 /* ===== projects.css ===== */
 /* projects.css â€” portfÃ³lio com filtros, grade mista e galeria */
@@ -1397,6 +1400,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   .gallery__item:nth-child(8) { grid-column: span 1; aspect-ratio: 4 / 3; }
 }
 
+
 /* ===== proof.css ===== */
 /* proof.css â€” depoimentos e credenciais/formaÃ§Ã£o */
 
@@ -1610,6 +1614,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   color: var(--color-ash);
 }
 .cred__foot svg { color: var(--color-signal-mint); flex: none; }
+
 
 /* ===== contact.css ===== */
 /* contact.css â€” CTA, contato, formulÃ¡rio e rodapÃ© */
@@ -1928,6 +1933,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 .to-top:hover { background: var(--color-chalk); color: var(--color-abyss); }
 
 
+
 /* ===== responsive.css ===== */
 /* responsive.css â€” breakpoints */
 
@@ -2047,5 +2053,6 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
   .section { background: #fff !important; color: #111 !important; }
   h1, h2, h3, h4 { color: #111 !important; }
 }
+
 
 
