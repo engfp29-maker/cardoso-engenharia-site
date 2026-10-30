@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', ' js');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cardoso Engenharia — Projetos, Obras e Reformas em Belém · PA</title>
-<meta name="description" content="Cardoso Engenharia — todos os serviços de engenharia em Belém · PA: planejamento, projetos residenciais e estruturais, compras, execução de obras e reformas, gerenciamento e fiscalização técnica.">
-<meta name="author" content="Cardoso Engenharia">
-<meta name="theme-color" content="#0B0E11">
+<title>Palheta Engenharia — Projetos, Obras e Reformas em Belém · PA</title>
+<meta name="description" content="Palheta Engenharia — todos os serviços de engenharia em Belém · PA: planejamento, projetos residenciais e estruturais, compras, execução de obras e reformas, gerenciamento e fiscalização técnica.">
+<meta name="author" content="Palheta Engenharia">
+<meta name="theme-color" content="#0a0a0a">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cardoso Engenharia — Engenharia Civil em Belém · PA">
+<meta property="og:title" content="Palheta Engenharia — Engenharia Civil em Belém · PA">
 <meta property="og:description" content="Planejar, projetar, comprar, executar, gerenciar e fiscalizar. Projetos residenciais e estruturais, reformas em geral e laudos técnicos em Belém e região.">
 <meta property="og:locale" content="pt_BR">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/hero.css">
-<link rel="stylesheet" href="assets/css/about.css">
-<link rel="stylesheet" href="assets/css/services.css">
-<link rel="stylesheet" href="assets/css/projects.css">
-<link rel="stylesheet" href="assets/css/proof.css">
-<link rel="stylesheet" href="assets/css/contact.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
 
@@ -33,16 +27,16 @@
 <!-- ============================ HEADER ============================ -->
 <header class="site-header site-header--over-dark">
   <div class="site-header__inner">
-    <a class="brand" href="#inicio" aria-label="Cardoso Engenharia — página inicial">
+    <a class="brand" href="#inicio" aria-label="Palheta Engenharia — página inicial">
       <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <rect x="4" y="4" width="40" height="40" stroke="currentColor" stroke-width="1.4"
-        <path d="M4 28h40M24 4v40" stroke="currentColor" stroke-width="0.9" opacity=".4"
-        <path d="M12 36V20l8-5v21" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
-        <path d="M28 36V15l8 5v16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
-        <path d="M16 12h16" stroke="currentColor" stroke-width="1.8"
+        <rect x="4" y="4" width="40" height="40" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M4 28h40M24 4v40" stroke="currentColor" stroke-width="0.9" opacity=".4"/>
+        <path d="M12 36V20l8-5v21" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M28 36V15l8 5v16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M16 12h16" stroke="currentColor" stroke-width="1.8"/>
       </svg>
       <span class="brand__text">
-        <span class="brand__name">Cardoso</span>
+        <span class="brand__name">Palheta</span>
         <span class="brand__sub">Engenharia Civil</span>
       </span>
     </a>
@@ -56,16 +50,16 @@
         <li><a class="nav__link" href="#credenciais">Credenciais</a></li>
         <li><a class="nav__link" href="#contato">Contato</a></li>
       </ul>
-      <a class="btn btn--copper" href="#contato">
+      <a class="btn btn--primary" href="#contato">
         Solicitar proposta
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+          <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn--ghost" href="#contato">Fale com um engenheiro</a>
+      <a class="btn btn--pill" href="#contato">Agendar visita técnica</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
         <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
       </button>
@@ -76,7 +70,8 @@
 <main id="conteudo">
 
 <!-- ============================ HERO ============================ -->
-<section class="hero" id="inicio">
+<section class="hero" id="inicio" style="--hero-photo:url('/assets/img/hero-obra-palheta.jpg')">
+  <div class="hero__photo" aria-hidden="true"></div>
   <div class="hero__bg" aria-hidden="true"></div>
   <div class="hero__grid" aria-hidden="true"></div>
 
@@ -95,13 +90,13 @@
       </p>
 
       <div class="hero__cta">
-        <a class="btn btn--copper" href="#contato">
+        <a class="btn btn--primary" href="#contato">
           Agendar diagnóstico técnico
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+            <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a class="btn btn--light" href="#projetos">Ver portfólio</a>
+        <a class="btn btn--ghost" href="#projetos">Ver portfólio</a>
       </div>
 
       <dl class="hero__meta">
@@ -129,40 +124,40 @@
 
         <svg class="bp" viewBox="0 0 360 250" role="img" aria-label="Desenho técnico de planta estrutural com pilares, vigas e cotas">
           <g class="bp-thin">
-            <path d="M40 30V220M100 30V220M170 30V220M240 30V220M310 30V220"
-            <path d="M40 40H310M40 100H310M40 160H310M40 220H310"
+            <path d="M40 30V220M100 30V220M170 30V220M240 30V220M310 30V220"/>
+            <path d="M40 40H310M40 100H310M40 160H310M40 220H310"/>
           </g>
 
           <g class="bp-fill">
-            <rect x="34" y="34" width="12" height="12"
-            <rect x="94" y="34" width="12" height="12"
-            <rect x="164" y="34" width="12" height="12"
-            <rect x="234" y="34" width="12" height="12"
-            <rect x="304" y="34" width="12" height="12"
-            <rect x="34" y="154" width="12" height="12"
-            <rect x="94" y="154" width="12" height="12"
-            <rect x="164" y="154" width="12" height="12"
-            <rect x="234" y="154" width="12" height="12"
-            <rect x="304" y="154" width="12" height="12"
-            <rect x="34" y="214" width="12" height="12"
-            <rect x="94" y="214" width="12" height="12"
-            <rect x="164" y="214" width="12" height="12"
-            <rect x="234" y="214" width="12" height="12"
-            <rect x="304" y="214" width="12" height="12"
+            <rect x="34" y="34" width="12" height="12"/>
+            <rect x="94" y="34" width="12" height="12"/>
+            <rect x="164" y="34" width="12" height="12"/>
+            <rect x="234" y="34" width="12" height="12"/>
+            <rect x="304" y="34" width="12" height="12"/>
+            <rect x="34" y="154" width="12" height="12"/>
+            <rect x="94" y="154" width="12" height="12"/>
+            <rect x="164" y="154" width="12" height="12"/>
+            <rect x="234" y="154" width="12" height="12"/>
+            <rect x="304" y="154" width="12" height="12"/>
+            <rect x="34" y="214" width="12" height="12"/>
+            <rect x="94" y="214" width="12" height="12"/>
+            <rect x="164" y="214" width="12" height="12"/>
+            <rect x="234" y="214" width="12" height="12"/>
+            <rect x="304" y="214" width="12" height="12"/>
           </g>
 
           <g class="bp-line">
-            <path d="M40 40H310M40 160H310M40 220H310"
-            <path d="M100 40V70h70v90M240 40v50h70"
-            <path d="M100 160v60M240 160v60"
+            <path d="M40 40H310M40 160H310M40 220H310"/>
+            <path d="M100 40V70h70v90M240 40v50h70"/>
+            <path d="M100 160v60M240 160v60"/>
           </g>
 
-          <rect x="170" y="70" width="70" height="90" class="bp-accent" opacity=".9"
-          <path d="M170 70l70 90M240 70l-70 90" class="bp-dash"
+          <rect x="170" y="70" width="70" height="90" class="bp-accent" opacity=".9"/>
+          <path d="M170 70l70 90M240 70l-70 90" class="bp-dash"/>
 
           <g class="bp-line" opacity=".7">
-            <path d="M40 232v8M100 232v8M170 232v8M240 232v8M310 232v8M36 236h278"
-            <path d="M318 40h8M318 100h8M318 160h8M318 220h8M322 36v188"
+            <path d="M40 232v8M100 232v8M170 232v8M240 232v8M310 232v8M36 236h278"/>
+            <path d="M318 40h8M318 100h8M318 160h8M318 220h8M322 36v188"/>
           </g>
 
           <g class="bp-text">
@@ -193,8 +188,8 @@
       <div class="hero__badge">
         <span class="hero__badge-icon" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
-            <path d="M9 12l2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+            <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 12l2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </span>
         <p>
@@ -225,10 +220,10 @@
     <div class="about">
       <figure class="about__media reveal">
         <div class="about__portrait">
-          <img class="about__photo" src="assets/img/eng-fabio-cardoso.jpg" alt="Engenheiro civil Fabio Cardoso em obra acompanhada pela Cardoso Engenharia" loading="lazy" decoding="async">
+          <div class="about__photo about__photo--monogram" role="img" aria-label="Palheta Engenharia — Fabricio Palheta, engenheiro civil"><span>FP</span></div>
           <div class="about__caption">
             <div>
-              <strong>Eng. Fabio Cardoso</strong>
+              <strong>Eng. Fabricio Palheta</strong>
               <span>Engenheiro civil · Belém · PA</span>
             </div>
             <span>Responsável técnico</span>
@@ -253,7 +248,7 @@
         </p>
 
         <p class="reveal" data-delay="2">
-          É exatamente esse escopo que a Cardoso Engenharia entrega: do plano de
+          É exatamente esse escopo que a Palheta Engenharia entrega: do plano de
           necessidade à entrega da obra, com projetos, compras, execução de reformas
           e acompanhamento técnico conduzidos por uma equipe que atende do particular
           ao incorporador, em Belém e região.
@@ -261,12 +256,12 @@
 
         <blockquote class="about__quote reveal" data-delay="2">
           “Trabalhamos com todos os serviços de engenharia.”
-          <cite>Cardoso Engenharia · Fabio Cardoso, engenheiro civil responsável</cite>
+          <cite>Palheta Engenharia · Fabricio Palheta, engenheiro civil responsável</cite>
         </blockquote>
 
         <div class="reveal" data-delay="3">
           <p class="eyebrow" style="margin-bottom:0.9rem">Especializações</p>
-          <ul class="stecialties">
+          <ul class="specialties">
             <li>Projetos residenciais</li>
             <li>Projetos estruturais</li>
             <li>Reformas em geral</li>
@@ -300,7 +295,7 @@
   </div>
 </section>
 
-<!-- ============================ SERVI"S ============================ -->
+<!-- ============================ SERVIÇOS ============================ -->
 <section class="section section--dark" id="servicos">
   <div class="container">
     <div class="section-head reveal">
@@ -318,9 +313,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M3 21V8l9-5 9 5v13" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M9 21v-7h6v7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M3 21h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <path d="M3 21V8l9-5 9 5v13" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 21v-7h6v7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M3 21h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <span class="service__num">01</span>
@@ -341,9 +336,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M4 20V9l8-5 8 5v11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M4 20h16M8 20v-6h8v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M9 9h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <path d="M4 20V9l8-5 8 5v11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M4 20h16M8 20v-6h8v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 9h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <span class="service__num">02</span>
@@ -364,9 +359,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M4 20V7l8-4 8 4v13M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M8 20v-6h8v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M9 10h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <path d="M4 20V7l8-4 8 4v13M4 20h16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 20v-6h8v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 10h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <span class="service__num">03</span>
@@ -387,9 +382,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M3 17l6-6 4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-              <path d="M15 7h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-              <path d="M3 21h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <path d="M3 17l6-6 4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 7h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 21h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <span class="service__num">04</span>
@@ -410,9 +405,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"
-              <circle cx="12" cy="12" r="1.5" fill="currentColor"
+              <path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
             </svg>
           </span>
           <span class="service__num">05</span>
@@ -433,9 +428,9 @@
         <div class="service__top">
           <span class="service__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M5 4h9l5 5v11H5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M14 4v5h5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M8.5 13h7M8.5 16.5h4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <path d="M5 4h9l5 5v11H5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 4v5h5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8.5 13h7M8.5 16.5h4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <span class="service__num">06</span>
@@ -463,7 +458,7 @@
       <div class="section-head reveal">
         <p class="eyebrow">Portfólio</p>
         <h2>Obras que traduzem critério.</h2>
-        <p>Seleção de reformas, projetos e obras acompanhadas pela Cardoso Engenharia.</p>
+        <p>Seleção de reformas, projetos e obras acompanhadas pela Palheta Engenharia.</p>
       </div>
 
       <ul class="projects__filters reveal" data-delay="1" role="group" aria-label="Filtrar projetos">
@@ -478,7 +473,7 @@
 
       <a class="project project--wide reveal" href="#contato" data-category="reforma">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-torre-evidence.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/obra-edificio-alto-padrao.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -495,7 +490,7 @@
 
       <a class="project reveal" data-delay="1" href="#contato" data-category="reforma">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-sitio-fabicolandia.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/casa-terrea.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -508,7 +503,7 @@
 
       <a class="project reveal" data-delay="2" href="#contato" data-category="projeto">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/projeto-planejamento-obras.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/projeto-executivo-obra.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -522,9 +517,9 @@
       <a class="project reveal" data-delay="1" href="#contato" data-category="gestao">
         <div class="project__media project__media--d" aria-hidden="true">
           <svg viewBox="0 0 240 220" fill="none">
-            <rect x="50" y="50" width="140" height="130" stroke="currentColor" stroke-width="1.3"
-            <path d="M50 90h140M50 130h140M90 50v130M150 50v130" stroke="currentColor" stroke-width=".9"
-            <path d="M50 50l140 130M190 50L50 180" stroke="currentColor" stroke-width=".5" stroke-dasharray="3 4" opacity=".55"
+            <rect x="50" y="50" width="140" height="130" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M50 90h140M50 130h140M90 50v130M150 50v130" stroke="currentColor" stroke-width=".9"/>
+            <path d="M50 50l140 130M190 50L50 180" stroke="currentColor" stroke-width=".5" stroke-dasharray="3 4" opacity=".55"/>
           </svg>
         </div>
         <div class="project__shade" aria-hidden="true"></div>
@@ -539,11 +534,11 @@
       <a class="project reveal" data-delay="2" href="#contato" data-category="gestao">
         <div class="project__media project__media--e" aria-hidden="true">
           <svg viewBox="0 0 240 220" fill="none">
-            <path d="M60 180V70l60-30 60 30v110" stroke="currentColor" stroke-width="1.3"
-            <path d="M40 180h160" stroke="currentColor" stroke-width="1.3"
-            <path d="M80 180v-40h20v40M140 180v-40h20v40" stroke="currentColor" stroke-width=".9"
-            <path d="M120 40v40" stroke="currentColor" stroke-width=".7" stroke-dasharray="3 4"
-            <circle cx="120" cy="100" r="12" stroke="currentColor" stroke-width=".9"
+            <path d="M60 180V70l60-30 60 30v110" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M40 180h160" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M80 180v-40h20v40M140 180v-40h20v40" stroke="currentColor" stroke-width=".9"/>
+            <path d="M120 40v40" stroke="currentColor" stroke-width=".7" stroke-dasharray="3 4"/>
+            <circle cx="120" cy="100" r="12" stroke="currentColor" stroke-width=".9"/>
           </svg>
         </div>
         <div class="project__shade" aria-hidden="true"></div>
@@ -557,7 +552,7 @@
 
       <a class="project reveal" data-delay="3" href="#contato" data-category="projeto">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/servicos-engenharia.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/estrutura-industrial.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -570,7 +565,7 @@
 
       <a class="project reveal" data-delay="1" href="#contato" data-category="reforma">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-reforma-apartamento.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/reforma-interiores.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -583,7 +578,7 @@
 
       <a class="project reveal" data-delay="2" href="#contato" data-category="reforma">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-reforma-interiores.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/interiores-sala.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -596,7 +591,7 @@
 
       <a class="project reveal" data-delay="3" href="#contato" data-category="projeto">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-residencial-belem.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/fachada-residencial.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -609,7 +604,7 @@
 
       <a class="project project--wide reveal" data-delay="1" href="#contato" data-category="gestao">
         <div class="project__media project__media--photo" aria-hidden="true">
-          <img src="assets/img/obra-gerenciamento-canteiro.jpg" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/canteiro-gerenciamento.jpg" alt="" loading="lazy" decoding="async">
         </div>
         <div class="project__shade" aria-hidden="true"></div>
         <div class="project__body">
@@ -628,15 +623,57 @@
 
     <div class="projects__more reveal" data-delay="2">
       <p>
-        Seleção de obras acompanhadas pela Cardoso Engenharia em Belém e região.
+        Seleção de obras acompanhadas pela Palheta Engenharia em Belém e região.
         Quer ver mais detalhes de cada projeto? Fale direto com o responsável técnico.
       </p>
-      <a class="btn btn--copper" href="#contato">
+      <a class="btn btn--primary" href="#contato">
         Falar sobre meu projeto
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
           <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
+    </div>
+
+    <!-- Galeria de obras -->
+    <div class="gallery reveal" data-delay="1">
+      <div class="gallery__head">
+        <p class="eyebrow">Registros de obra</p>
+        <h3>Do canteiro ao acabamento</h3>
+      </div>
+      <ul class="gallery__grid">
+        <li class="gallery__item">
+          <img src="assets/img/obra-edificio-alto-padrao.jpg" alt="Edifício residencial de alto padrão com fachada envidraçada" loading="lazy" decoding="async">
+          <span>Fachada · Edifício residencial</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/casa-terrea.jpg" alt="Residência térrea com área de convívio e iluminação natural" loading="lazy" decoding="async">
+          <span>Residencial · Casa térrea</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/arquitetura-premium.jpg" alt="Ambiente de arquitetura contemporânea em tons neutros" loading="lazy" decoding="async">
+          <span>Arquitetura contemporânea</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/projeto-interiores.jpg" alt="Projeto de interiores com mobiliário planejado" loading="lazy" decoding="async">
+          <span>Projeto de interiores</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/acabamentos-alto-padrao.jpg" alt="Acabamentos de alto padrão em sala de estar" loading="lazy" decoding="async">
+          <span>Acabamentos alto padrão</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/obra-comercial.jpg" alt="Obra comercial em fase de execução com estrutura aparente" loading="lazy" decoding="async">
+          <span>Obra comercial · execução</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/urbanismo-paisagismo.jpg" alt="Projeto de urbanismo e paisagismo integrado ao lote" loading="lazy" decoding="async">
+          <span>Urbanismo e paisagismo</span>
+        </li>
+        <li class="gallery__item">
+          <img src="assets/img/estrutura-industrial.jpg" alt="Estrutura industrial metálica em galpão" loading="lazy" decoding="async">
+          <span>Estrutura industrial</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -655,7 +692,7 @@
         <a class="link-arrow" href="#contato" style="margin-top:1.75rem">
           Conhecer metodologia
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+            <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
       </div>
@@ -664,8 +701,8 @@
         <li class="diff__item reveal">
           <span class="diff__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M12 3l7.5 3v6.2c0 4.4-3.1 8-7.5 9.4-4.4-1.4-7.5-5-7.5-9.4V6L12 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M9 12.2l2.1 2.1 4-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              <path d="M12 3l7.5 3v6.2c0 4.4-3.1 8-7.5 9.4-4.4-1.4-7.5-5-7.5-9.4V6L12 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M9 12.2l2.1 2.1 4-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
           <div>
@@ -681,9 +718,9 @@
         <li class="diff__item reveal" data-delay="1">
           <span class="diff__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <rect x="3" y="4" width="18" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"
-              <path d="M3 9h18M8 2v4M16 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              <path d="M7 13h4M7 16.5h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              <rect x="3" y="4" width="18" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M3 9h18M8 2v4M16 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M7 13h4M7 16.5h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </span>
           <div>
@@ -699,8 +736,8 @@
         <li class="diff__item reveal" data-delay="2">
           <span class="diff__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M4 17V7l8-4 8 4v10l-8 4-8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <path d="M4 7l8 4 8-4M12 11v10" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"
+              <path d="M4 17V7l8-4 8 4v10l-8 4-8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M4 7l8 4 8-4M12 11v10" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
             </svg>
           </span>
           <div>
@@ -716,8 +753,8 @@
         <li class="diff__item reveal" data-delay="3">
           <span class="diff__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M3 20h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              <path d="M6 20V12M11 20V8M16 20v-5M21 20V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              <path d="M3 20h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6 20V12M11 20V8M16 20v-5M21 20V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
           <div>
@@ -733,8 +770,8 @@
         <li class="diff__item reveal" data-delay="4">
           <span class="diff__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M12 21s7-4.4 7-10V5.5L12 3 5 5.5V11c0 5.6 7 10 7 10z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
-              <circle cx="12" cy="10.5" r="2.4" stroke="currentColor" stroke-width="1.5"
+              <path d="M12 21s7-4.4 7-10V5.5L12 3 5 5.5V11c0 5.6 7 10 7 10z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="12" cy="10.5" r="2.4" stroke="currentColor" stroke-width="1.5"/>
             </svg>
           </span>
           <div>
@@ -842,14 +879,14 @@
           <li>
             <span class="timeline__year">Responsabilidade</span>
             <h4>Engenheiro civil habilitado</h4>
-            <p>Fabio Cardoso · ART emitida em todo projeto e obra do escritório.</p>
+            <p>Fabricio Palheta · ART emitida em todo projeto e obra do escritório.</p>
           </li>
         </ul>
 
         <ul class="certs">
           <li class="cert">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
             <div>
               <strong>NBR 6118 · ABNT</strong>
@@ -858,7 +895,7 @@
           </li>
           <li class="cert">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
             <div>
               <strong>BIM · Compatibilização</strong>
@@ -867,7 +904,7 @@
           </li>
           <li class="cert">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
             <div>
               <strong>Inspeção de Estruturas</strong>
@@ -876,7 +913,7 @@
           </li>
           <li class="cert">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              <path d="M5 3h14v18l-7-4-7 4V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
             <div>
               <strong>Gestão de Contratos</strong>
@@ -894,7 +931,7 @@
         <dl class="cred__rows">
           <div class="cred__row">
             <dt>Responsável técnico</dt>
-            <dd>Fabio Cardoso · Engenheiro Civil</dd>
+            <dd>Fabricio Palheta · Engenheiro Civil</dd>
           </div>
           <div class="cred__row">
             <dt>Registro profissional</dt>
@@ -919,7 +956,7 @@
         </dl>
         <p class="cred__foot">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+            <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
           </svg>
           Documentação verificável sob solicitação
         </p>
@@ -936,10 +973,10 @@
       <h2>Precisa de um parecer técnico antes de decidir?</h2>
       <p>Análise preliminar gratuita de escopo, prazo e viabilidade para o seu projeto.</p>
     </div>
-    <a class="btn btn--copper reveal" data-delay="1" href="#contato">
+    <a class="btn btn--primary reveal" data-delay="1" href="#contato">
       Falar com engenheiro responsável
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+        <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
   </div>
@@ -961,46 +998,46 @@
           <div class="contact__item">
             <span class="contact__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
-                <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
               </svg>
             </span>
             <div>
               <dt>E-mail</dt>
-              <dd><a href="mailto:contato@cardoso.eng.br">contato@cardoso.eng.br</a></dd>
+              <dd><a href="mailto:contato@palheta.eng.br">contato@palheta.eng.br</a></dd>
             </div>
           </div>
 
           <div class="contact__item">
             <span class="contact__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
               </svg>
             </span>
             <div>
               <dt>Telefone / WhatsApp</dt>
-              <dd><a href="https://wa.me/5591982352594" target="_blank" rel="noopener">+55 91 98235-2594</a></dd>
+              <dd><a href="https://wa.me/5591980936447?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20engenheiro%20Fabricio%20Palheta%20sobre%20meu%20projeto." target="_blank" rel="noopener">+55 91 98093-6447</a></dd>
             </div>
           </div>
 
           <div class="contact__item">
             <span class="contact__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"
-                <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
               </svg>
             </span>
             <div>
               <dt>WhatsApp</dt>
-              <dd><a href="https://wa.me/5591982352594" target="_blank" rel="noopener">+55 91 98235-2594</a></dd>
+              <dd><a href="https://wa.me/5591980936447?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20engenheiro%20Fabricio%20Palheta%20sobre%20meu%20projeto." target="_blank" rel="noopener">+55 91 98093-6447</a></dd>
             </div>
           </div>
 
           <div class="contact__item">
             <span class="contact__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
-                <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"
+                <path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/>
               </svg>
             </span>
             <div>
@@ -1012,16 +1049,16 @@
           <div class="contact__item">
             <span class="contact__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"
-                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"
-                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
               </svg>
             </span>
             <div>
               <dt>Instagram</dt>
               <dd>
-                <a href="https://www.instagram.com/cardosoengenharia.fc/" target="_blank" rel="noopener">
-                  @cardosoengenharia.fc
+                <a href="https://www.instagram.com/palhetaengenharia/" target="_blank" rel="noopener">
+                  @palhetaengenharia
                 </a>
               </dd>
             </div>
@@ -1030,8 +1067,8 @@
 
         <p class="contact__hours">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"
-            <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
           Atendimento: seg. a sex., 8h às 18h · visitas técnicas agendadas
         </p>
@@ -1040,7 +1077,7 @@
       <div class="form-card reveal" data-delay="1">
         <div class="form-card__head">
           <h3>Briefing técnico</h3>
-          <p>Campos com <span style="color:var(--copper-600)">*</span> são obrigatórios.</p>
+          <p>Campos com <span style="color:var(--color-chalk)">*</span> são obrigatórios.</p>
         </div>
 
         <form id="contact-form" novalidate>
@@ -1095,10 +1132,10 @@
             <span>Autorizo o contato e o tratamento dos meus dados para fins de elaboração de proposta, conforme a LGPD.</span>
           </label>
 
-          <button class="btn btn--copper" type="submit" style="margin-top:1.25rem">
+          <button class="btn btn--primary" type="submit" style="margin-top:1.25rem">
             <span>Enviar briefing</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+              <path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
 
@@ -1119,16 +1156,16 @@
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a class="brand" href="#inicio" aria-label="Cardoso Engenharia — página inicial">
+        <a class="brand" href="#inicio" aria-label="Palheta Engenharia — página inicial">
           <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <rect x="4" y="4" width="40" height="40" stroke="currentColor" stroke-width="1.4"
-            <path d="M4 28h40M24 4v40" stroke="currentColor" stroke-width="0.9" opacity=".4"
-            <path d="M12 36V20l8-5v21" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
-            <path d="M28 36V15l8 5v16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
-            <path d="M16 12h16" stroke="currentColor" stroke-width="1.8"
+            <rect x="4" y="4" width="40" height="40" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M4 28h40M24 4v40" stroke="currentColor" stroke-width="0.9" opacity=".4"/>
+            <path d="M12 36V20l8-5v21" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M28 36V15l8 5v16" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M16 12h16" stroke="currentColor" stroke-width="1.8"/>
           </svg>
           <span class="brand__text">
-            <span class="brand__name">Cardoso</span>
+            <span class="brand__name">Palheta</span>
             <span class="brand__sub">Engenharia Civil</span>
           </span>
         </a>
@@ -1137,22 +1174,22 @@
           reformas em geral, compras, execução, gerenciamento e fiscalização de obras.
         </p>
         <div class="footer__social">
-          <a href="https://www.instagram.com/cardosoengenharia.fc/" target="_blank" rel="noopener" aria-label="Instagram @cardosoengenharia.fc">
+          <a href="https://www.instagram.com/palhetaengenharia/" target="_blank" rel="noopener" aria-label="Instagram @palhetaengenharia">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"
-              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"
-              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
             </svg>
           </a>
           <a href="#" aria-label="LinkedIn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 9v11M4 4.5v.5M10 20V9m0 4c0-2 1.8-3.5 4-3.5s4 1.5 4 3.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              <path d="M4 9v11M4 4.5v.5M10 20V9m0 4c0-2 1.8-3.5 4-3.5s4 1.5 4 3.5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
             </svg>
           </a>
-          <a href="mailto:contato@cardoso.eng.br" aria-label="E-mail">
+          <a href="mailto:contato@palheta.eng.br" aria-label="E-mail">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
-              <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+              <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
             </svg>
           </a>
         </div>
@@ -1183,8 +1220,8 @@
       <div class="footer__col">
         <h4>Contato</h4>
         <ul>
-          <li><a href="mailto:contato@cardoso.eng.br">contato@cardoso.eng.br</a></li>
-          <li><a href="https://wa.me/5591982352594" target="_blank" rel="noopener">+55 91 98235-2594</a></li>
+          <li><a href="mailto:contato@palheta.eng.br">contato@palheta.eng.br</a></li>
+          <li><a href="https://wa.me/5591980936447?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20engenheiro%20Fabricio%20Palheta%20sobre%20meu%20projeto." target="_blank" rel="noopener">+55 91 98093-6447</a></li>
           <li>Reduto · Belém · PA</li>
           <li>Seg. a sex. · 8h às 18h</li>
         </ul>
@@ -1192,15 +1229,15 @@
     </div>
 
     <div class="footer__bottom">
-      <p>© <span id="current-year">2026</span> Cardoso Engenharia. Todos os direitos reservados.</p>
-      <span class="footer__crea">Cardoso Engenharia · ART por projeto</span>
+      <p>© <span id="current-year">2026</span> Palheta Engenharia. Todos os direitos reservados.</p>
+      <span class="footer__crea">Palheta Engenharia · ART por projeto</span>
     </div>
   </div>
 </footer>
 
 <button class="to-top" type="button" aria-label="Voltar ao topo">
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-    <path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+    <path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 </button>
 

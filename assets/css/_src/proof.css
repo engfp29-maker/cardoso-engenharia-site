@@ -1,0 +1,212 @@
+/* proof.css — depoimentos e credenciais/formação */
+
+/* ---------- DEPOIMENTOS ---------- */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+}
+.testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.25rem, 2.2vw, 1.75rem);
+  background: var(--color-carbon);
+  border: 1px solid var(--color-graphite);
+  border-radius: var(--radius-md);
+  transition: border-color var(--dur) var(--ease);
+}
+.testimonial:hover { border-color: var(--color-graphite-strong); }
+
+.testimonial__quote-mark {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 0.6;
+  color: #4a4a4a;
+  height: 1.25rem;
+}
+.testimonial blockquote {
+  font-size: var(--text-body);
+  line-height: 1.6;
+  color: #d4d4d4;
+}
+.testimonial__author {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-graphite);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+.testimonial__avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--color-chalk);
+  background: var(--color-graphite);
+  flex: none;
+}
+.testimonial__author strong {
+  display: block;
+  font-size: var(--text-caption);
+  font-weight: 500;
+  color: var(--color-chalk);
+}
+.testimonial__author span {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+
+/* ---------- CREDENCIAIS ---------- */
+.cred {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.cred h2 { font-size: var(--fs-h2); margin-block: var(--space-4) var(--space-4); }
+.cred > div > p { color: var(--color-ash); }
+
+.timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 1.6rem;
+  display: grid;
+  gap: clamp(1.25rem, 2.2vw, 1.75rem);
+  margin-top: var(--space-6);
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px; top: 8px; bottom: 8px;
+  width: 1px;
+  background: var(--color-graphite);
+}
+.timeline li { position: relative; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -1.6rem; top: 7px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--color-abyss);
+  border: 1.5px solid var(--color-graphite-strong);
+}
+.timeline li:first-child::before { border-color: var(--color-signal-mint); }
+.timeline__year {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.timeline h4 {
+  font-size: var(--text-body);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-chalk);
+  margin-bottom: 0.2rem;
+}
+.timeline p { font-size: var(--text-caption); color: var(--color-ash); }
+
+.certs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin-top: var(--space-6);
+}
+.cert {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 1rem;
+  background: var(--color-carbon);
+  border: 1px solid var(--color-graphite);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--dur) var(--ease);
+}
+.cert:hover { border-color: var(--color-graphite-strong); }
+.cert svg { flex: none; color: var(--color-chalk); margin-top: 2px; }
+.cert strong {
+  display: block;
+  font-size: var(--text-caption);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-chalk);
+}
+.cert span { font-size: 0.75rem; color: var(--color-ash); }
+
+/* Painel de ficha técnica — card Carbon com borda mint (dado vivo) */
+.cred__panel {
+  position: relative;
+  border-radius: var(--radius-md);
+  background: var(--color-carbon);
+  border: 1px solid var(--color-signal-mint);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  color: var(--color-ash);
+  overflow: hidden;
+}
+.cred__panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-graphite);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+.cred__panel-head .badge {
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--mint-soft);
+  color: var(--color-signal-mint);
+  letter-spacing: 0.1em;
+}
+.cred__rows { display: grid; gap: 0.85rem; }
+.cred__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--color-graphite);
+}
+.cred__row:last-child { border-bottom: 0; padding-bottom: 0; }
+.cred__row dt {
+  font-size: var(--text-caption);
+  color: var(--color-ash);
+}
+.cred__row dd {
+  margin: 0;
+  font-size: var(--text-caption);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-chalk);
+  text-align: right;
+}
+.cred__foot {
+  margin-top: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-graphite);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+.cred__foot svg { color: var(--color-signal-mint); flex: none; }

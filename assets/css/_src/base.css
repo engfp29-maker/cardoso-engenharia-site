@@ -1,0 +1,503 @@
+﻿/* ==========================================================================
+   PALHETA ENGENHARIA â€” base.css
+   Design system: "terminal de engenharia" (referÃªncia DESIGN.md)
+   Canvas Abyss #0a0a0a Â· Cards Carbon #171717 Â· Bordas Graphite #222222
+   Acento Ãºnico: Signal Mint #3fe280 (APENAS CTA, nav ativo e cards de dado vivo)
+   ========================================================================== */
+
+/* ---------- 1. Tokens ---------- */
+:root {
+  /* Cores â€” superfÃ­cies */
+  --color-abyss: #0a0a0a;
+  --color-carbon: #171717;
+  --color-graphite: #222222;
+  --color-graphite-strong: #2b2b2b;
+  --color-ash: #9b9b9b;
+  --color-chalk: #ffffff;
+  --color-signal-mint: #3fe280;
+  --color-signal-mint-hover: #5ceb96;
+
+  /* Aliases semÃ¢nticos */
+  --ink-950: var(--color-abyss);
+  --ink-900: var(--color-carbon);
+  --ink-800: var(--color-carbon);
+  --ink-700: var(--color-graphite);
+  --ink-600: var(--color-ash);
+  --ink-500: var(--color-ash);
+  --ink-400: var(--color-ash);
+  --ink-300: #c9c9c9;
+  --ink-200: #e6e6e6;
+  --ink-100: var(--color-graphite);
+  --white: var(--color-chalk);
+  --paper: var(--color-abyss);
+  --paper-warm: var(--color-abyss);
+
+  --mint: var(--color-signal-mint);
+  --mint-soft: rgba(63, 226, 128, 0.14);
+  --mint-line: rgba(63, 226, 128, 0.38);
+
+  /* Compat: aliases do design antigo â€” neutros, nunca coloridos */
+  --copper-700: var(--color-chalk);
+  --copper-600: var(--color-chalk);
+  --copper-500: var(--color-chalk);
+  --copper-400: var(--color-chalk);
+
+  /* Tipografia */
+  /* Aeonik nÃ£o Ã© licenciada/adquirida: a substituta geomÃ©trica neutra Ã©
+     Space Grotesk (peso 400, tracking negativo) â€” mantÃ©m o "display" discreto. */
+  --font-display: "Space Grotesk", "Aeonik", "Satoshi", "General Sans", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Inter", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  /* Escala tipogrÃ¡fica (DESIGN.md) */
+  --text-caption: 0.875rem;   /* 14px */
+  --text-body: 1rem;          /* 16px */
+  --text-subheading: 1.25rem; /* 20px */
+  --text-heading-sm: 1.5rem;  /* 24px */
+  --text-heading: 2.25rem;    /* 36px */
+  --text-display: clamp(2.6rem, 1.5rem + 4.4vw, 4.5rem); /* 72px no topo */
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --fs-h4: clamp(1.125rem, 1rem + 0.45vw, 1.375rem);
+  --fs-h3: clamp(1.375rem, 1.1rem + 1vw, 1.875rem);
+  --fs-h2: clamp(1.875rem, 1.3rem + 2.2vw, 2.75rem);
+  --fs-h1: var(--text-display);
+
+  --tracking-ui: 0.05em;      /* assinatura: Inter sempre com +0.05em */
+  --tracking-display: -0.025em;
+
+  /* EspaÃ§amento â€” base 8px */
+  --space-1: 0.5rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --section-y: clamp(4rem, 2.5rem + 6vw, 7rem);
+  --container: 1200px;
+  --container-narrow: 940px;
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
+
+  /* Raios â€” 12 cards / 16 botÃµes / 9999 pÃ­lulas / 64 hero */
+  --radius-sm: 12px;
+  --radius-md: 12px;
+  --radius-lg: 12px;
+  --radius-btn: 16px;
+  --radius-hero: 64px;
+  --radius-pill: 9999px;
+
+  /* Sem sombras â€” elevaÃ§Ã£o Ã© comunicada por cor */
+  --shadow-subtle: rgba(24, 39, 75, 0.08) 0 2px 3px 0;
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 300ms;
+  --header-h: 76px;
+}
+
+/* ---------- 2. Reset ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 12px);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.5;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-ash);
+  background: var(--color-abyss);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+
+input, button, textarea, select { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; background: none; border: none; }
+a { color: inherit; text-decoration: none; }
+ul { padding: 0; list-style: none; }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-chalk);
+  text-wrap: balance;
+}
+
+/* Display face â€” usada UMA vez por pÃ¡gina (hero), sempre peso 400 */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+}
+
+h3, h4 { line-height: 1.33; letter-spacing: var(--tracking-ui); }
+p { text-wrap: pretty; }
+
+::selection { background: var(--color-signal-mint); color: var(--color-abyss); }
+
+:focus-visible {
+  outline: 2px solid var(--color-signal-mint);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- 3. UtilitÃ¡rios ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.container--narrow { max-width: var(--container-narrow); }
+
+.section { padding-block: var(--section-y); position: relative; }
+.section--tight { padding-block: clamp(2.5rem, 2rem + 3vw, 4rem); }
+
+/* Todas as seÃ§Ãµes vivem no Abyss â€” a diferenÃ§a Ã© feita por cards e bordas */
+.section--dark,
+.section--paper,
+.section--white,
+.section--warm { background: var(--color-abyss); color: var(--color-ash); }
+
+.section--dark h1, .section--dark h2, .section--dark h3, .section--dark h4,
+.section--paper h1, .section--paper h2, .section--paper h3, .section--paper h4,
+.section--white h1, .section--white h2, .section--white h3, .section--white h4,
+.section--warm h1, .section--warm h2, .section--warm h3, .section--warm h4 {
+  color: var(--color-chalk);
+}
+
+.section + .section { border-top: 1px solid var(--color-graphite); }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px; left: 1rem;
+  z-index: 999;
+  background: var(--color-chalk);
+  color: var(--color-abyss);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-btn);
+  transition: top 200ms var(--ease);
+}
+.skip-link:focus { top: 1rem; }
+
+/* Eyebrow: rÃ³tulo tÃ©cnico, sem cor de acento */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-graphite-strong);
+}
+
+.section-head {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 44rem;
+  margin-bottom: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+}
+.section-head--center { margin-inline: auto; text-align: center; }
+.section-head--center .eyebrow { justify-content: center; }
+.section-head h2 {
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+}
+.section-head p {
+  font-size: var(--text-body);
+  color: var(--color-ash);
+  max-width: 38rem;
+}
+.section-head--center p { margin-inline: auto; }
+
+.lead {
+  font-size: var(--fs-lg);
+  line-height: 1.6;
+  color: var(--ink-200);
+}
+
+/* ---------- BotÃµes ---------- */
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-chalk);
+  --btn-bd: var(--color-graphite);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+  text-transform: none;
+  color: var(--btn-fg);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-bd);
+  border-radius: var(--radius-btn);
+  transition: background var(--dur) var(--ease),
+              color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease);
+}
+.btn svg { flex: none; transition: transform var(--dur) var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+
+/* CTA primÃ¡rio: Ãºnico elemento colorido em movimento */
+.btn--primary,
+.btn--copper {
+  --btn-bg: var(--color-signal-mint);
+  --btn-fg: var(--color-abyss);
+  --btn-bd: var(--color-signal-mint);
+  box-shadow: var(--shadow-subtle);
+}
+.btn--primary:hover,
+.btn--copper:hover {
+  --btn-bg: var(--color-signal-mint-hover);
+  --btn-bd: var(--color-signal-mint-hover);
+}
+
+/* Ghost: companheiro silencioso */
+.btn--ghost,
+.btn--light {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-chalk);
+  --btn-bd: var(--color-graphite);
+}
+.btn--ghost:hover,
+.btn--light:hover {
+  --btn-bg: var(--color-carbon);
+  --btn-bd: var(--color-graphite-strong);
+}
+
+/* PÃ­lula branca invertida (uso global, ex.: header) */
+.btn--pill {
+  --btn-bg: var(--color-chalk);
+  --btn-fg: var(--color-abyss);
+  --btn-bd: var(--color-chalk);
+  border-radius: var(--radius-pill);
+}
+.btn--pill:hover { --btn-bg: var(--ink-200); --btn-bd: var(--ink-200); }
+
+.btn--hero { border-radius: var(--radius-hero); }
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-caption);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-chalk);
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--color-graphite);
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.link-arrow svg { transition: transform var(--dur) var(--ease); }
+.link-arrow:hover { color: var(--color-signal-mint); border-color: var(--mint-line); }
+.link-arrow:hover svg { transform: translateX(4px); }
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal[data-delay="1"] { transition-delay: 70ms; }
+.reveal[data-delay="2"] { transition-delay: 140ms; }
+.reveal[data-delay="3"] { transition-delay: 210ms; }
+.reveal[data-delay="4"] { transition-delay: 280ms; }
+.reveal[data-delay="5"] { transition-delay: 350ms; }
+
+/* Fallback: sem JavaScript, nada fica oculto */
+html:not(.js) .reveal { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   4. HEADER â€” barra mÃ­nima sobre Abyss
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--color-graphite);
+  transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.site-header.is-stuck {
+  background: rgba(10, 10, 10, 0.94);
+  border-bottom-color: var(--color-graphite-strong);
+}
+.site-header__inner {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+
+.site-header--over-dark .brand,
+.site-header--over-dark .brand__mark { color: var(--color-chalk); }
+.site-header--over-dark .brand__sub { color: var(--color-ash); }
+.site-header--over-dark .nav__link { color: var(--color-ash); }
+.site-header--over-dark .nav__link:hover,
+.site-header--over-dark .nav__link.is-active { color: var(--color-chalk); }
+.site-header--over-dark .nav-toggle { color: var(--color-chalk); border-color: var(--color-graphite); }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-chalk);
+}
+.brand__mark {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  color: var(--color-chalk);
+  transition: color var(--dur) var(--ease);
+}
+.brand:hover .brand__mark { color: var(--color-signal-mint); }
+.brand__text { display: grid; line-height: 1; gap: 6px; }
+.brand__name {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-chalk);
+}
+.brand__sub {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ash);
+}
+
+.nav { display: flex; align-items: center; gap: clamp(1rem, 2vw, 1.75rem); }
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 1.8vw, 1.75rem);
+  list-style: none;
+  padding: 0;
+}
+.nav__link {
+  position: relative;
+  display: inline-block;
+  font-size: var(--text-body);
+  font-weight: 400;
+  letter-spacing: var(--tracking-ui);
+  color: var(--color-ash);
+  padding-block: 0.55rem;
+  transition: color var(--dur) var(--ease);
+}
+/* Sublinhado de 3px mint â€” Ãºnico ponto de verde na navegaÃ§Ã£o */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: var(--color-signal-mint);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur) var(--ease);
+}
+.nav__link:hover { color: var(--color-chalk); }
+.nav__link.is-active { color: var(--color-chalk); }
+.nav__link.is-active::after { transform: scaleX(1); }
+
+.header-actions { display: flex; align-items: center; gap: 0.75rem; }
+.header-actions .btn {
+  padding: 0.55rem 1.15rem;
+  font-size: var(--text-caption);
+}
+
+.nav-toggle {
+  display: none;
+  width: 42px; height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-graphite);
+  border-radius: 12px;
+  color: var(--color-chalk);
+}
+.nav-toggle__bars { position: relative; width: 20px; height: 12px; }
+.nav-toggle__bars span {
+  position: absolute;
+  left: 0;
+  width: 100%; height: 1.5px;
+  background: currentColor;
+  transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+}
+.nav-toggle__bars span:nth-child(1) { top: 0; }
+.nav-toggle__bars span:nth-child(2) { top: 5px; }
+.nav-toggle__bars span:nth-child(3) { top: 10px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+
